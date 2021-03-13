@@ -1,0 +1,21 @@
+<div class="alert alert-primary" role="alert">
+  Müşteriler
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Customer Id</th>
+      <th>Kullanıcı Id</th>
+      <th>Şirket</th>
+      <th>Müşteri Adı </th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let customer of customers">
+    <td>{{ customer.customerId }}</td>
+    <td>{{ customer.userId }}</td>
+    <td>{{ customer.companyName }}</td>
+    <td>{{ customer.customerName }}</td>
+    <td>{{ customer.email }}</td>
+  </tr>
+</table>
